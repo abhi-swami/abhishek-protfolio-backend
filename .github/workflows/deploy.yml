@@ -18,6 +18,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/abhishek-protfolio-backend
-            git pull origin master
+            git pull origin main
             npm install
             pm2 restart portfolio-api
