@@ -3,7 +3,7 @@ const Contact = require("../models/Contact");
 
 const router = express.Router();
 
-router.post("/contact", async (req, res) => {
+router.post("/api/contact", async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
 
